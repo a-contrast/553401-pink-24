@@ -1,0 +1,64 @@
+.tarifs-table__cell {
+  width: 278px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px;
+  background-color: @third-color;
+  font-size: 14px;
+  line-height: 30px;
+
+  &--empty {
+    display: none;
+  }
+
+  &::before {
+    text-transform: uppercase;
+  }
+
+  &--pink {
+    &::before {
+      content: "Розовый фильтр";
+    }
+  }
+
+  &--smile {
+    &::before {
+      content: "Смайлики";
+    }
+  }
+
+  &--comment {
+    &::before {
+      content: "Комментарии";
+    }
+  }
+}
+
+.tarifs-table__header {
+  height: 94px;
+
+  &:not(:first-child) {
+    background-color: @main-color;
+    color: @third-color;
+  }
+}
+
+.tarifs-table__name {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.tarifs-table__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.tarifs-table__function {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
