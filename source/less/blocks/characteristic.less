@@ -1,0 +1,41 @@
+.characteristic {
+  padding-top: 46px;
+  background: linear-gradient(175deg, transparent 25%, @second-bg-color 10px);
+}
+
+.characteristic__wrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "title"
+    "list"
+    "smartphone";
+}
+
+.characteristic__wrapper-inner {
+  grid-area: title;
+}
+
+.characteristic__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.characteristic__list {
+  grid-area: list;
+}
+
+.characteristic__wrapper-image {
+  grid-area: smartphone;
+  height: 257px;
+  overflow: hidden;
+}
+
+.characteristic__demo-image {
+  display: block;
+}

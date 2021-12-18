@@ -7,40 +7,43 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="galary.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="">Html Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__container container">
+          <a class="page-header__logo">
+            <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle main-nav__toggle--close" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active">
+                  <a>Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="galary.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="">Html Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Приложение «Pink» — взгляните на жизнь иначе!</h1>
 
       <section class="promo">
-        <div class="promo__wrapper">
+        <div class="promo__container container">
           <h2 class="visually-hidden">Скачать приложение</h2>
           <p class="promo__slogan">Взгляните на жизнь иначе!</p>
-          <div class="promo__download download">
+          <img class="promo__image" src="img/promo.png" width="320" height="286" alt="Пример приложения">
+          <div class="promo__download download wrapper">
             <a class="download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <ul class="download__list">
               <li class="download__item">
@@ -69,12 +72,13 @@
       </section>
 
       <section class="characteristic">
-        <div class="characteristic__wrapper">
+        <div class="characteristic__container container">
           <h2 class="visually-hidden">Характеристики приложения</h2>
-          <p class="characteristic__title">Устали от серости мегаполиса?</p>
-          <p class="characteristic__title">Нам есть, что вам<br> предложить!</p>
-          <div class="characteristic__list-wrapper">
-            <img class="characteristic__demo-image" src="img/iphone-3.png" width="157" height="320" alt="Демонстрация приложения">
+          <div class="characteristic__wrapper wrapper">
+            <div class="characteristic__wrapper-inner">
+              <p class="characteristic__title">Устали от серости мегаполиса?</p>
+              <p class="characteristic__title">Нам есть, что вам<br> предложить!</p>
+            </div>
             <ul class="characteristic__list characteristic-list">
               <li class="characteristic-list__item">
                 <h3 class="characteristic-list__title">Поднимает настроение</h3>
@@ -92,7 +96,10 @@
                 <p class="characteristic-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-          </div>
+            <div class="characteristic__wrapper-image">
+              <img class="characteristic__demo-image" src="img/iphone-3.png" width="157" height="320" alt="Демонстрация приложения">
+            </div>
+            </div>
         </div>
       </section>
 
@@ -103,127 +110,147 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper slider">
+        <div class="reviews__container container wrapper">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-info">
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <div class="reviews__list">
+            <blockquote class="reviews__item">
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <div class="reviews__wrapper">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <small class="reviews__author-about">25 лет, водитель трамвая</small>
               </div>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__button reviews__button--prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__button reviews__button--next" type="button">Следующий отзыв</button>
           </div>
 
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <div class="reviews__toggles">
+            <button class="reviews__toggle reviews__toggle--current" type="button">1</button>
+            <button class="reviews__toggle" type="button">2</button>
+            <button class="reviews__toggle" type="button">3</button>
+          </div>
         </div>
       </section>
 
       <section class="tarifs">
         <h2 class="visually-hidden">Наши тарифы</h2>
-        <table class="tarifs__table tarifs-table">
-          <tr class="tarifs-table__row">
-            <th class="tarifs-table__header tarifs-table__header--empty"></th>
-            <th class="tarifs-table__header">
-              <span class="tarifs-table__name">База</span>
-              <b class="tarifs-table__price">1,99 USD</b>
-            </th>
-            <th class="tarifs-table__header tarifs-table__header--hit">
-              <span class="tarifs-table__name">Стандарт</span>
-              <b class="tarifs-table__price">3,99 USD</b>
-            </th>
-            <th class="tarifs-table__header">
-              <span class="tarifs-table__name">Анлим</span>
-              <b class="tarifs-table__price">9,99 USD</b>
-            </th>
-          </tr>
-          <tr class="tarifs-table__row">
-            <td class="tarifs-table__cell">
-              <span class="tarifs-table__function">Розовый фильтр</span>
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-            </td>
-          </tr>
-          <tr class="tarifs-table__row">
-            <td class="tarifs-table__cell">
-              <span class="tarifs-table__function">Смайлики</span>
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-            </td>
-          </tr>
-          <tr class="tarifs-table__row">
-            <td class="tarifs-table__cell">
-              <span class="tarifs-table__function">Комментарии</span>
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
-            </td>
-            <td class="tarifs-table__cell">
-              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-            </td>
-          </tr>
-        </table>
+        <div class="tarifs__container container">
+          <table class="tarifs__table tarifs-table">
+            <tr class="tarifs-table__row">
+              <th class="tarifs-table__header tarifs-table__cell--empty"></th>
+              <th class="tarifs-table__header">
+                <span class="tarifs-table__name">База</span>
+                <b class="tarifs-table__price">1,99 USD</b>
+              </th>
+              <th class="tarifs-table__header tarifs-table__header--hit">
+                <span class="tarifs-table__name">Стандарт</span>
+                <b class="tarifs-table__price">3,99 USD</b>
+              </th>
+              <th class="tarifs-table__header">
+                <span class="tarifs-table__name">Анлим</span>
+                <b class="tarifs-table__price">9,99 USD</b>
+              </th>
+            </tr>
+            <tr class="tarifs-table__row">
+              <td class="tarifs-table__cell tarifs-table__cell--empty">
+                <span class="tarifs-table__function">Розовый фильтр</span>
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--pink">
+                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--smile">
+                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--comment">
+                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+              </td>
+            </tr>
+            <tr class="tarifs-table__row">
+              <td class="tarifs-table__cell tarifs-table__cell--empty">
+                <span class="tarifs-table__function">Смайлики</span>
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--pink">
+                <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--smile">
+                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--comment">
+                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+              </td>
+            </tr>
+            <tr class="tarifs-table__row">
+              <td class="tarifs-table__cell tarifs-table__cell--empty">
+                <span class="tarifs-table__function">Комментарии</span>
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--pink">
+                <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--smile">
+                <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
+              </td>
+              <td class="tarifs-table__cell tarifs-table__cell--comment">
+                <span>
+                  <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+                </span>
+                </td>
+            </tr>
+          </table>
+
+          <div class="tarifs__toggles">
+            <button class="tarifs__toggle tarifs__toggle--current" type="button">1</button>
+            <button class="tarifs__toggle" type="button">2</button>
+            <button class="tarifs__toggle" type="button">3</button>
+          </div>
+        </div>
       </section>
 
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__container container wrapper">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-          <div class="contacts__detail contacts-detail">
-            <h3 class="contacts-detail__title">Звоните:</h3>
-            <a class="contacts-detail__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-          </div>
-          <div class="contacts__detail contacts-detail">
-            <h3 class="contacts-detail__title">Пишите:</h3>
-            <a class="contacts-detail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-          <div class="contacts__detail contacts-detail">
-            <h3 class="contacts-detail__title">Приезжайте в гости:</h3>
-            <p class="contacts-detail__link">ул. Большая Конюшенная, 19/8</p>
+          <p class="contacts__title-text">Остались вопросы?<br>Свяжитесь с нами!</p>
+          <div class="contacts__wrapper">
+            <div class="contacts__item">
+              <h3 class="contacts__title">Звоните:</h3>
+              <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+            <div class="contacts__item">
+              <h3 class="contacts__title">Пишите:</h3>
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+            <div class="contacts__item">
+              <h3 class="contacts__title">Приезжайте в гости:</h3>
+              <p class="contacts__link">ул. Большая Конюшенная, 19/8</p>
+            </div>
           </div>
         </div>
-        <img class="contacts__map" src="img/map.jpg" width="1200" height="614" alt="Карта с маркером">
+        <div class="contacts__map-container">
+          <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="200" alt="Карта с маркером">
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__container container wrapper">
         <a class="page-footer__logo">
           <img src="img/logo-footer-mobile.svg" width="145" height="40" alt="Логотип приложения «Pink»">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Наш твиттер</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Наш твиттер</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
             </li>
           </ul>
         </div>
