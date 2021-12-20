@@ -1,19 +1,27 @@
 .characteristic {
   padding-top: 46px;
   background: linear-gradient(175deg, transparent 25%, @second-bg-color 10px);
+
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: 0;
+    width: 157px;
+    height: 257px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-image: url("../img/iphone-3.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 157px auto;
+  }
 }
 
 .characteristic__wrapper {
   display: grid;
   justify-items: center;
-  grid-template-areas:
-    "title"
-    "list"
-    "smartphone";
-}
-
-.characteristic__wrapper-inner {
-  grid-area: title;
 }
 
 .characteristic__title {
@@ -26,12 +34,7 @@
   line-height: 28.8px;
 }
 
-.characteristic__list {
-  grid-area: list;
-}
-
 .characteristic__wrapper-image {
-  grid-area: smartphone;
   height: 257px;
   overflow: hidden;
 }
