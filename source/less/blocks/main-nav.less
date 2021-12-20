@@ -1,3 +1,25 @@
+.main-nav {
+  .main-nav__wrapper {
+    display: none;
+    position: absolute;
+    top: 66px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &--nojs {
+    .main-nav__wrapper {
+      display: block;
+      position: relative;
+      top: 0;
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   padding: 0;
@@ -44,14 +66,6 @@
   }
 }
 
-.main-nav__wrapper {
-  display: none;
-  position: absolute;
-  top: 66px;
-  width: 100%;
-  z-index: 1;
-}
-
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -62,8 +76,10 @@
 
 .main-nav__item {
   background-color: @main-color;
-  box-shadow: inset 0 -1px 0 0 @border-color-2,
-    inset 0 1px 0 0 @border-color-3;
+  box-shadow:
+    inset 0 -1px 0 0 @border-color-2,
+    inset 0 1px 0 0 @border-color-3,
+    0 -1px 0 0 @border-color-2;
 
   a {
     display: flex;

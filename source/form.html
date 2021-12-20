@@ -8,8 +8,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__container page-header__container--inner container">
-          <a class="page-header__logo">
+      <div class="page-header__container page-header__container--inner">
+          <a class="page-header__logo" href="index.html">
             <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
           </a>
           <nav class="main-nav">
@@ -38,8 +38,12 @@
 
     <main class="page-main form-page page-main--inner">
 
-      <section class="form-page__competition">
+      <section class="promo">
         <h1 class="form-page__title container wrapper">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+
+      <section class="form-page__competition">
+        <h2 class="visually-hidden">Форма для конкурса</h2>
         <p class="form-page__subtitle container wrapper">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <p class="form-page__subtitle container wrapper form-page__subtitle--nomobile">Пожалуйста, заполните форму ниже:</p>
         <form class="form-page__form form" action="https://echo.htmlacademy.ru" method="post">
@@ -172,8 +176,11 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="img/academy.svg" width="27" height="34" alt="Логотип «HTML Academy»">
+          </a>
         </div>
       </div>
     </footer>

@@ -1,5 +1,33 @@
 .effect {
   display: none;
+  margin-bottom: 100px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.effect__container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 238px 276px;
+  }
+}
+
+.effect__wrapper {
+  width: 310px;
 }
 
 .effect__title {

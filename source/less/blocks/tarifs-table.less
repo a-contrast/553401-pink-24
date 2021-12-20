@@ -38,12 +38,24 @@
   font-size: 14px;
   line-height: 30px;
 
-  &--empty {
-    display: none;
-  }
-
   &::before {
     text-transform: uppercase;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 152px;
+    padding-right: 20px;
+    text-align: center;
+
+    &--nomobile {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &--nomobile {
+      display: none;
+    }
   }
 }
 
@@ -53,6 +65,10 @@
   &:not(:first-child) {
     background-color: @main-color;
     color: @third-color;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 75px;
   }
 }
 
@@ -74,10 +90,20 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+  }
 }
 
 .tarifs-table__image {
   position: absolute;
   top: 15px;
   right: 15px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }

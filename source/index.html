@@ -7,12 +7,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__container container">
+    <header class="page-header page-header--nojs">
+      <div class="page-header__container">
           <a class="page-header__logo">
             <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
           </a>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--nojs">
             <button class="main-nav__toggle main-nav__toggle--close" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -39,35 +39,36 @@
     <main class="page-main">
       <h1 class="visually-hidden">Приложение «Pink» — взгляните на жизнь иначе!</h1>
 
-      <section class="promo">
-        <div class="promo__container container">
-          <h2 class="visually-hidden">Скачать приложение</h2>
-          <p class="promo__slogan">Взгляните на жизнь иначе!</p>
-          <img class="promo__image" src="img/promo.png" width="320" height="286" alt="Пример приложения">
-          <div class="promo__download download wrapper">
-            <a class="download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-            <ul class="download__list">
-              <li class="download__item">
-                <a class="download__link" href="https://www.apple.com/ru/app-store/">
-                  <img src="img/apple-logo.svg" width="47" height="56" alt="Скачать для Apple">
-                </a>
-              </li>
-              <li class="download__item">
-                <a class="download__link" href="https://play.google.com/store">
-                  <img src="img/android-logo.svg" width="43" height="47" alt="Скачать для Android">
-                </a>
-              </li>
-              <li class="download__item">
-                <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-                  <img src="img/microsoft-logo.svg" width="44" height="41" alt="Скачать для Windows Phone">
-                </a>
-              </li>
-            </ul>
-            <p class="download__legend">
-              <small>
-                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-              </small>
-            </p>
+      <section class="promo promo--nojs">
+        <div class="promo__container container wrapper">
+          <div class="promo__wrapper">
+            <h2 class="visually-hidden">Скачать приложение</h2>
+            <p class="promo__slogan">Взгляните на жизнь иначе!</p>
+            <div class="promo__download download">
+              <a class="download__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+              <ul class="download__list">
+                <li class="download__item">
+                  <a class="download__link" href="https://www.apple.com/ru/app-store/">
+                    <img src="img/apple-logo.svg" width="47" height="56" alt="Скачать для Apple">
+                  </a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link" href="https://play.google.com/store">
+                    <img src="img/android-logo.svg" width="43" height="47" alt="Скачать для Android">
+                  </a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+                    <img src="img/microsoft-logo.svg" width="44" height="41" alt="Скачать для Windows Phone">
+                  </a>
+                </li>
+              </ul>
+              <p class="download__legend">
+                <small>
+                  Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+                </small>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -80,31 +81,37 @@
               <p class="characteristic__title">Устали от серости мегаполиса?</p>
               <p class="characteristic__title">Нам есть, что вам<br> предложить!</p>
             </div>
-            <ul class="characteristic__list characteristic-list">
-              <li class="characteristic-list__item">
-                <h3 class="characteristic-list__title">Поднимает настроение</h3>
-                <img class="characteristic-list__image" src="img/iphone-1.png" width="186" height="382" alt="Демонстрация приложения">
-                <p class="characteristic-list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              </li>
-              <li class="characteristic-list__item">
-                <h3 class="characteristic-list__title">Меняет мир вокруг</h3>
-                <img class="characteristic-list__image" src="img/iphone-2.png" width="186" height="382" alt="Демонстрация приложения">
-                <p class="characteristic-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-              </li>
-              <li class="characteristic-list__item">
-                <h3 class="characteristic-list__title">Заводит новых друзей</h3>
-                <img class="characteristic-list__image" src="img/iphone-3.png" width="186" height="382" alt="Демонстрация приложения">
-                <p class="characteristic-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </li>
-            </ul>
+            <div class="characteristic__wrapper-list">
+              <ul class="characteristic__list characteristic-list">
+                <li class="characteristic-list__item">
+                  <h3 class="characteristic-list__title">Поднимает настроение</h3>
+                  <img class="characteristic-list__image" src="img/iphone-1.png" width="186" height="382" alt="Демонстрация приложения">
+                  <p class="characteristic-list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="characteristic-list__item">
+                  <h3 class="characteristic-list__title">Меняет мир вокруг</h3>
+                  <img class="characteristic-list__image" src="img/iphone-2.png" width="186" height="382" alt="Демонстрация приложения">
+                  <p class="characteristic-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+                <li class="characteristic-list__item">
+                  <h3 class="characteristic-list__title">Заводит новых друзей</h3>
+                  <img class="characteristic-list__image" src="img/iphone-3.png" width="186" height="382" alt="Демонстрация приложения">
+                  <p class="characteristic-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
       </section>
 
       <section class="effect">
-        <h2 class="effect__title">Эффект на 24 часа!</h2>
-        <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="effect__link-more" href="">Узнать больше об исследовании</a>
+        <div class="effect__container container wrapper">
+          <div class="effect__wrapper">
+            <h2 class="effect__title">Эффект на 24 часа!</h2>
+            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__link-more" href="">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </section>
 
       <section class="reviews">
@@ -135,7 +142,7 @@
         <!-- <div class="tarifs__container container"> -->
           <table class="tarifs__table tarifs-table">
             <tr class="tarifs-table__row">
-              <th class="tarifs-table__header tarifs-table__cell--empty"></th>
+              <th class="tarifs-table__header tarifs-table__cell--nomobile"></th>
               <th class="tarifs-table__header">
                 <span class="tarifs-table__name">База</span>
                 <b class="tarifs-table__price">1,99 USD</b>
@@ -150,7 +157,7 @@
               </th>
             </tr>
             <tr class="tarifs-table__row tarifs-table__row--pink">
-              <td class="tarifs-table__cell tarifs-table__cell--empty">
+              <td class="tarifs-table__cell tarifs-table__cell--nomobile">
                 <span class="tarifs-table__function">Розовый фильтр</span>
               </td>
               <td class="tarifs-table__cell">
@@ -164,7 +171,7 @@
               </td>
             </tr>
             <tr class="tarifs-table__row tarifs-table__row--smile">
-              <td class="tarifs-table__cell tarifs-table__cell--empty">
+              <td class="tarifs-table__cell tarifs-table__cell--nomobile">
                 <span class="tarifs-table__function">Смайлики</span>
               </td>
               <td class="tarifs-table__cell">
@@ -178,7 +185,7 @@
               </td>
             </tr>
             <tr class="tarifs-table__row tarifs-table__row--comment">
-              <td class="tarifs-table__cell tarifs-table__cell--empty">
+              <td class="tarifs-table__cell tarifs-table__cell--nomobile">
                 <span class="tarifs-table__function">Комментарии</span>
               </td>
               <td class="tarifs-table__cell">
@@ -223,7 +230,8 @@
           </div>
         </div>
         <div class="contacts__map-container">
-          <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="200" alt="Карта с маркером">
+          <!-- <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="200" alt="Карта с маркером"> -->
+          <img class="contacts__map" src="img/map-tablet.jpg" width="660" height="374" alt="Карта с маркером">
         </div>
       </section>
     </main>
@@ -253,8 +261,11 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="img/academy.svg" width="27" height="34" alt="Логотип «HTML Academy»">
+          </a>
         </div>
       </div>
     </footer>
