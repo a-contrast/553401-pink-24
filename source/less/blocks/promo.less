@@ -46,11 +46,11 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 300px;
+    width: 48.49%;
 
     &::before {
       position: absolute;
-      width: @tablet-width;
+      width: calc(100vw - @wrapper-padding);
       height: 545px;
       left: 0;
       background-image: url("../img/promo-tablet.png");
@@ -61,7 +61,7 @@
 
   @media (min-width: @desktop-width) {
     &::before {
-      width: @desktop-width;
+      max-width: 1200px - @wrapper-padding;
     }
   }
 }

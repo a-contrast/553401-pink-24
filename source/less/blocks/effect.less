@@ -21,7 +21,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    right: 60%;
     top: 0;
     width: 238px;
     height: 276px;
@@ -37,16 +37,18 @@
     &::before {
       width: 298px;
       height: 345px;
+      right: auto;
+      left: @wrapper-padding;
       background-size: 298px 345px;
     }
   }
 }
 
 .effect__wrapper {
-  width: 310px;
+  width: 50%;
 
   @media (min-width: @desktop-width) {
-    width: 540px;
+    width: 57.5%;
     padding-top: 70px;
     padding-bottom: 70px;
     margin-left: 370px;

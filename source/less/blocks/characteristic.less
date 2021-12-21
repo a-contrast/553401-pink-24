@@ -36,7 +36,7 @@
   @media (min-width: @tablet-width) {
     &::after {
       position: absolute;
-      left: 20px;
+      right: 55%;
       width: 268px;
       height: 481px;
       background-size: 268px auto;
@@ -84,12 +84,13 @@
 
 .characteristic__wrapper-list {
   @media (min-width: @tablet-width) {
-    width: 310px;
+    width: 50%;
     justify-self: end;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width - (2 * @wrapper-padding);
+    width: calc(100% - (2 * @wrapper-padding));
+    justify-self: center;
   }
 }
 
