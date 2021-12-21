@@ -18,25 +18,49 @@
     position: relative;
     background-color: @main-color;
   }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+
+    &--nojs {
+      position: absolute;
+      background-color: @header-bg-color;
+    }
+  }
 }
 
 .page-header__container {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .page-header__logo {
   display: block;
   width: 75px;
   height: 22px;
-  margin: 22px 20px;
+  margin: 22px @wrapper-padding;
 
   img {
     display: block;
   }
 
   @media (min-width: @tablet-width) {
-    margin: 44px 20px;
+    margin: 44px @wrapper-padding;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }

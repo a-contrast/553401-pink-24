@@ -1,11 +1,15 @@
 .characteristic {
   position: relative;
   padding-top: 46px;
-  background: linear-gradient(175deg, transparent 25%, @second-bg-color 10px);
+  background: linear-gradient(175deg, transparent 25%, @second-bg-color 25%);
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 54px;
-  }
+  // @media (min-width: @tablet-width) {
+  //   margin-bottom: 54px;
+  // }
+
+  // @media (min-width: @tablet-width) {
+  //   margin-bottom: 0;
+  // }
 }
 
 .characteristic__wrapper {
@@ -23,7 +27,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    background-image: url("../img/iphone-3.png");
+    background-image: url("../img/iphone-4.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 157px auto;
@@ -36,6 +40,12 @@
       width: 268px;
       height: 481px;
       background-size: 268px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      display: none;
     }
   }
 }
@@ -54,6 +64,11 @@
     line-height: 54.47px;
     margin-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68.09px;
+  }
 }
 
 .characteristic__wrapper-inner {
@@ -71,6 +86,10 @@
   @media (min-width: @tablet-width) {
     width: 310px;
     justify-self: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - (2 * @wrapper-padding);
   }
 }
 

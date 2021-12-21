@@ -24,7 +24,7 @@
   position: absolute;
   padding: 0;
   top: 23px;
-  right: 20px;
+  right: @wrapper-padding;
   width: 50px;
   height: 24px;
   background-color: transparent;
@@ -72,6 +72,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
@@ -86,5 +90,11 @@
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 75px;
+    box-shadow: none;
+    background-color: transparent;
   }
 }

@@ -85,17 +85,17 @@
               <ul class="characteristic__list characteristic-list">
                 <li class="characteristic-list__item">
                   <h3 class="characteristic-list__title">Поднимает настроение</h3>
-                  <img class="characteristic-list__image" src="img/iphone-1.png" width="186" height="382" alt="Демонстрация приложения">
+                  <img class="characteristic-list__image" src="img/iphone-1.png" width="308" height="382" alt="Демонстрация приложения">
                   <p class="characteristic-list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </li>
                 <li class="characteristic-list__item">
                   <h3 class="characteristic-list__title">Меняет мир вокруг</h3>
-                  <img class="characteristic-list__image" src="img/iphone-2.png" width="186" height="382" alt="Демонстрация приложения">
+                  <img class="characteristic-list__image" src="img/iphone-2.png" width="308" height="382" alt="Демонстрация приложения">
                   <p class="characteristic-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </li>
                 <li class="characteristic-list__item">
                   <h3 class="characteristic-list__title">Заводит новых друзей</h3>
-                  <img class="characteristic-list__image" src="img/iphone-3.png" width="186" height="382" alt="Демонстрация приложения">
+                  <img class="characteristic-list__image" src="img/iphone-3.png" width="308" height="382" alt="Демонстрация приложения">
                   <p class="characteristic-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
               </ul>
@@ -108,7 +108,7 @@
         <div class="effect__container container wrapper">
           <div class="effect__wrapper">
             <h2 class="effect__title">Эффект на 24 часа!</h2>
-            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <p class="effect__text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
             <a class="effect__link-more" href="">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -125,8 +125,12 @@
                 <small class="reviews__author-about">25 лет, водитель трамвая</small>
               </div>
             </blockquote>
-            <button class="reviews__button reviews__button--prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__button reviews__button--next" type="button">Следующий отзыв</button>
+            <button class="reviews__button reviews__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__button reviews__button--next" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
           </div>
 
           <div class="reviews__toggles">
@@ -139,75 +143,73 @@
 
       <section class="tarifs">
         <h2 class="visually-hidden">Наши тарифы</h2>
-        <!-- <div class="tarifs__container container"> -->
-          <table class="tarifs__table tarifs-table">
-            <tr class="tarifs-table__row">
-              <th class="tarifs-table__header tarifs-table__cell--nomobile"></th>
-              <th class="tarifs-table__header">
-                <span class="tarifs-table__name">База</span>
-                <b class="tarifs-table__price">1,99 USD</b>
-              </th>
-              <th class="tarifs-table__header tarifs-table__header--hit">
-                <span class="tarifs-table__name">Стандарт</span>
-                <b class="tarifs-table__price">3,99 USD</b>
-              </th>
-              <th class="tarifs-table__header">
-                <span class="tarifs-table__name">Анлим</span>
-                <b class="tarifs-table__price">9,99 USD</b>
-              </th>
-            </tr>
-            <tr class="tarifs-table__row tarifs-table__row--pink">
-              <td class="tarifs-table__cell tarifs-table__cell--nomobile">
-                <span class="tarifs-table__function">Розовый фильтр</span>
-              </td>
-              <td class="tarifs-table__cell">
+        <table class="tarifs__table tarifs-table">
+          <tr class="tarifs-table__row">
+            <th class="tarifs-table__header tarifs-table__cell--nomobile"></th>
+            <th class="tarifs-table__header">
+              <span class="tarifs-table__name">База</span>
+              <b class="tarifs-table__price">1,99 USD</b>
+            </th>
+            <th class="tarifs-table__header tarifs-table__header--hit">
+              <span class="tarifs-table__name">Стандарт</span>
+              <b class="tarifs-table__price">3,99 USD</b>
+            </th>
+            <th class="tarifs-table__header">
+              <span class="tarifs-table__name">Анлим</span>
+              <b class="tarifs-table__price">9,99 USD</b>
+            </th>
+          </tr>
+          <tr class="tarifs-table__row tarifs-table__row--pink">
+            <td class="tarifs-table__cell tarifs-table__cell--nomobile">
+              <span class="tarifs-table__function">Розовый фильтр</span>
+            </td>
+            <td class="tarifs-table__cell">
+              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+            </td>
+            <td class="tarifs-table__cell">
+              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+            </td>
+            <td class="tarifs-table__cell">
+              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+            </td>
+          </tr>
+          <tr class="tarifs-table__row tarifs-table__row--smile">
+            <td class="tarifs-table__cell tarifs-table__cell--nomobile">
+              <span class="tarifs-table__function">Смайлики</span>
+            </td>
+            <td class="tarifs-table__cell">
+              <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
+            </td>
+            <td class="tarifs-table__cell">
+              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+            </td>
+            <td class="tarifs-table__cell">
+              <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+            </td>
+          </tr>
+          <tr class="tarifs-table__row tarifs-table__row--comment">
+            <td class="tarifs-table__cell tarifs-table__cell--nomobile">
+              <span class="tarifs-table__function">Комментарии</span>
+            </td>
+            <td class="tarifs-table__cell">
+              <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
+            </td>
+            <td class="tarifs-table__cell">
+              <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
+            </td>
+            <td class="tarifs-table__cell">
+              <span>
                 <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
+              </span>
               </td>
-              <td class="tarifs-table__cell">
-                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-              </td>
-              <td class="tarifs-table__cell">
-                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-              </td>
-            </tr>
-            <tr class="tarifs-table__row tarifs-table__row--smile">
-              <td class="tarifs-table__cell tarifs-table__cell--nomobile">
-                <span class="tarifs-table__function">Смайлики</span>
-              </td>
-              <td class="tarifs-table__cell">
-                <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
-              </td>
-              <td class="tarifs-table__cell">
-                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-              </td>
-              <td class="tarifs-table__cell">
-                <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-              </td>
-            </tr>
-            <tr class="tarifs-table__row tarifs-table__row--comment">
-              <td class="tarifs-table__cell tarifs-table__cell--nomobile">
-                <span class="tarifs-table__function">Комментарии</span>
-              </td>
-              <td class="tarifs-table__cell">
-                <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
-              </td>
-              <td class="tarifs-table__cell">
-                <img class="tarifs-table__image" src="img/no.svg" width="27" height="27" alt="Функция отсутствует">
-              </td>
-              <td class="tarifs-table__cell">
-                <span>
-                  <img class="tarifs-table__image" src="img/yes.svg" width="31" height="21" alt="Функция присутствует">
-                </span>
-                </td>
-            </tr>
-          </table>
+          </tr>
+        </table>
 
-          <div class="tarifs__toggles">
-            <button class="tarifs__toggle tarifs__toggle--current" type="button">1</button>
-            <button class="tarifs__toggle" type="button">2</button>
-            <button class="tarifs__toggle" type="button">3</button>
-          </div>
-        <!-- </div> -->
+        <div class="tarifs__toggles">
+          <button class="tarifs__toggle tarifs__toggle--current" type="button">1</button>
+          <button class="tarifs__toggle" type="button">2</button>
+          <button class="tarifs__toggle" type="button">3</button>
+        </div>
       </section>
 
       <section class="contacts">
@@ -219,7 +221,7 @@
               <h3 class="contacts__title">Звоните:</h3>
               <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
-            <div class="contacts__item">
+            <div class="contacts__item contacts__item--mail">
               <h3 class="contacts__title">Пишите:</h3>
               <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
@@ -231,7 +233,8 @@
         </div>
         <div class="contacts__map-container">
           <!-- <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="200" alt="Карта с маркером"> -->
-          <img class="contacts__map" src="img/map-tablet.jpg" width="660" height="374" alt="Карта с маркером">
+          <!-- <img class="contacts__map" src="img/map-tablet.jpg" width="660" height="374" alt="Карта с маркером"> -->
+          <img class="contacts__map" src="img/map.jpg" width="1200" height="502" alt="Карта с маркером">
         </div>
       </section>
     </main>

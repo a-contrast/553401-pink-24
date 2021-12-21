@@ -6,17 +6,21 @@
 }
 
 .download__button {
-  padding-top: 10px;
-  padding-bottom: 11px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   margin-bottom: 32px;
   border: 3px solid @third-color;
   border-radius: 29px;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 18px;
   color: @third-color;
   text-decoration: none;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .download__list {
