@@ -1,7 +1,8 @@
 .page-header {
-  // background-color: @header-bg-color;
-  // добавить, при декстопной версии
+  position: absolute;
+  width: 100%;
   color: @third-color;
+  background-color: @header-bg-color;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -12,42 +13,56 @@
     text-decoration: none;
     color: inherit;
   }
+
+  &--nojs {
+    position: relative;
+    background-color: @main-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+
+    &--nojs {
+      position: absolute;
+      background-color: @header-bg-color;
+    }
+  }
 }
 
 .page-header__container {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 23px;
-  background: linear-gradient(to bottom, @header-bg-color 66px, transparent 66px);
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 462px;
-    top: 0;
-    right: 0;
-    background-color: @main-bg-color;
-    background-image: url("../img/back-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    z-index: -2;
-  }
-
-  &--inner {
-    &::after {
-      height: 237px;
-    }
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px - (2 * @wrapper-padding);
+    padding-left: @wrapper-padding;
+    padding-right: @wrapper-padding;
+    margin: 0 auto;
   }
 }
 
 .page-header__logo {
   display: block;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  width: 75px;
+  height: 22px;
+  margin: 22px @wrapper-padding;
 
   img {
     display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 44px @wrapper-padding;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }

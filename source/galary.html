@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__container page-header__container--inner container">
+      <div class="page-header__container page-header__container--inner">
           <a class="page-header__logo" href="index.html">
             <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
           </a>
@@ -36,7 +37,9 @@
     </header>
 
     <main class="page-main page-main--inner">
-      <h1 class="page-main__title container">Фотографии пользователей</h1>
+      <section class="promo">
+        <h1 class="page-main__title container">Фотографии пользователей</h1>
+      </section>
 
       <section class="photogalary container">
         <h2 class="visually-hidden">Загрузка своей фотографии</h2>
@@ -212,8 +215,11 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="img/academy.svg" width="27" height="34" alt="Логотип «HTML Academy»">
+          </a>
         </div>
       </div>
     </footer>

@@ -1,19 +1,53 @@
 .characteristic {
+  position: relative;
   padding-top: 46px;
-  background: linear-gradient(175deg, transparent 25%, @second-bg-color 10px);
+  background: linear-gradient(175deg, transparent 25%, @second-bg-color 25%);
+
+  // @media (min-width: @tablet-width) {
+  //   margin-bottom: 54px;
+  // }
+
+  // @media (min-width: @tablet-width) {
+  //   margin-bottom: 0;
+  // }
 }
 
 .characteristic__wrapper {
+  position: relative;
   display: grid;
   justify-items: center;
-  grid-template-areas:
-    "title"
-    "list"
-    "smartphone";
-}
 
-.characteristic__wrapper-inner {
-  grid-area: title;
+  &::after {
+    content: "";
+    position: relative;
+    display: block;
+    bottom: 0;
+    width: 157px;
+    height: 257px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-image: url("../img/iphone-4.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 157px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      position: absolute;
+      right: 55%;
+      width: 268px;
+      height: 481px;
+      background-size: 268px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .characteristic__title {
@@ -24,16 +58,40 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 28.8px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 54.47px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68.09px;
+  }
 }
 
-.characteristic__list {
-  grid-area: list;
+.characteristic__wrapper-inner {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 120px;
+  }
 }
 
 .characteristic__wrapper-image {
-  grid-area: smartphone;
   height: 257px;
   overflow: hidden;
+}
+
+.characteristic__wrapper-list {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    justify-self: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: calc(100% - (2 * @wrapper-padding));
+    justify-self: center;
+  }
 }
 
 .characteristic__demo-image {

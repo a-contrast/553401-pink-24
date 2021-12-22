@@ -1,5 +1,21 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 12px;
+
+  img {
+    display: block;
+  }
+}
+
 .copyright__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin-right: 15px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }

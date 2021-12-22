@@ -4,12 +4,30 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .page-footer__logo {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
 }
 
 .page-footer__social {
   margin-bottom: 20px;
+  flex-grow: 1;
+  align-self: stretch;
+}
+
+.page-footer__copyright {
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
 }
