@@ -27,4 +27,9 @@
 .wrapper {
   padding-left: @wrapper-padding;
   padding-right: @wrapper-padding;
+
+  @media (min-width: @desktop-width) {
+    padding-left: @wrapper-padding-desktop;
+    padding-right: @wrapper-padding-desktop;
+  }
 }

@@ -1,4 +1,7 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 14px;
   line-height: 24px;
 
@@ -6,16 +9,50 @@
     margin-bottom: 20px;
 
     .card__wrapper {
-      margin: 0 20px;
+      margin: 0 @wrapper-padding;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--main {
+      .card__image {
+        height: 509px;
+      }
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--main {
+      .card__image {
+        height: 506px;
+      }
+
+      .card__wrapper {
+        margin: 0 @wrapper-padding-desktop;
+      }
     }
   }
 }
 
 .card__image {
   display: block;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 300px;
+  }
 }
 
 .card__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-self: stretch;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 17px;
@@ -45,6 +82,7 @@
 }
 
 .card__like-button {
+  margin-top: auto;
   text-transform: uppercase;
   color: @second-color;
   font-size: 12px;

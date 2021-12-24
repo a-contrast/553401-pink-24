@@ -8,12 +8,18 @@
   background-repeat: no-repeat;
   background-position: top;
 
+  &--inner {
+    min-height: 237px;
+    padding-bottom: 25px;
+  }
+
   &--nojs {
     padding-top: 0;
     background-position: center -66px;
   }
 
   @media (min-width: @tablet-width) {
+    padding-top: 110px;
     background-image: url("../img/back-tablet.jpg");
   }
 
@@ -61,7 +67,7 @@
 
   @media (min-width: @desktop-width) {
     &::before {
-      max-width: 1200px - @wrapper-padding;
+      max-width: 1200px - @wrapper-padding-desktop;
     }
   }
 }

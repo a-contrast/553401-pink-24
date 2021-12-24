@@ -1,20 +1,21 @@
-.page-main {
-  &--inner {
-    .promo {
-      min-height: 237px;
-      padding-bottom: 25px;
-    }
+.page-main__title {
+  width: 230px;
+  padding: 0;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32.68px;
+  color: @third-color;
 
-    h1 {
-      width: 230px;
-      padding: 0;
-      margin-top: 30px;
-      text-align: center;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 32.68px;
-      color: @third-color;
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    font-size: 50px;
+    line-height: 68.09px;
+
+    &--form {
+      width: 620px;
     }
   }
 }
