@@ -25,7 +25,7 @@
                   <a href="galary.html">Фотографии</a>
                 </li>
                 <li class="main-nav__item  main-nav__item--active">
-                  <a">Конкурс</a>
+                  <a>Конкурс</a>
                 </li>
                 <li class="main-nav__item">
                   <a href="">Html Academy</a>
@@ -42,14 +42,17 @@
         <h1 class="page-main__title page-main__title--form container wrapper">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
 
-      <section class="form-page__competition">
+      <section class="form-page__competition container">
         <h2 class="visually-hidden">Форма для конкурса</h2>
-        <p class="form-page__subtitle container wrapper">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <p class="form-page__subtitle container wrapper form-page__subtitle--nomobile">Пожалуйста, заполните форму ниже:</p>
+        <p class="form-page__subtitle">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="form-page__subtitle-nomobile">Пожалуйста, заполните форму ниже:</span>
+        </p>
+
         <form class="form-page__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset container form__fieldset--name">
+          <fieldset class="form__fieldset form__fieldset--name">
+            <legend class="visually-hidden">Введите ФИО</legend>
             <div class="form__wrapper wrapper">
-              <legend class="visually-hidden">Введите ФИО</legend>
               <label class="form__label form__label--input">Фамилия:
                 <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *">
               </label>
@@ -65,8 +68,8 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--container form__fieldset--os">
-            <div class="form__container container form__app wrapper">
-              <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <div class="form__container form__app wrapper">
               <label class="form__label">
                 <input class="form__radio" type="radio" name="app-data" value="iOS" checked>
                 Pink для iOS
@@ -84,24 +87,24 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset container form__fieldset--contact">
+          <fieldset class="form__fieldset form__fieldset--contact">
+            <legend class="form__legend">Контактная информация</legend>
             <div class="form__wrapper wrapper">
-              <legend class="form__legend">Контактная информация</legend>
               <div class="form__item">
-                <label class="form__label" for="phone">Номер телефона</label>
+                <label class="form__label form__label--phone" for="phone">Номер телефона</label>
                 <input class="form__input" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </div>
 
               <div class="form__item">
-                <label class="form__label" for="email">Адрес почты</label>
+                <label class="form__label form__label--email" for="email">Адрес почты</label>
                 <input class="form__input" id="email" type="email" name="email" placeholder="Введите почту *">
               </div>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--container form__fieldset--achievements">
-            <div class="form__container container form__checkboxes wrapper">
-              <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__container form__checkboxes wrapper">
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="selfie" checked>
                 Сделал селфи с акулой
@@ -134,15 +137,15 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset container form__fieldset--comment">
+          <fieldset class="form__fieldset form__fieldset--comment">
+            <legend class="form__legend">Опишите свои эмоции</legend>
             <div class="form__wrapper wrapper">
-              <legend class="form__legend">Опишите свои эмоции</legend>
               <label class="visually-hidden" for="comment">Опишите свои эмоции</label>
               <textarea class="form__textarea" id="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
 
-          <div class="form__submit container wrapper">
+          <div class="form__submit wrapper">
             <button class="form__button" type="submit">Отправить форму</button>
             <span class="form__explanation">
               <span class="form__color-span">*</span> &mdash; Обязательные <span class="form__nomobile">для заполнения</span> поля</span>
