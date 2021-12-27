@@ -7,13 +7,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__container page-header__container--inner">
           <a class="page-header__logo" href="index.html">
             <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
           </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <nav class="main-nav main-nav--nojs main-nav--closed">
+            <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="main-nav__wrapper">
@@ -38,7 +38,7 @@
 
     <main class="page-main form-page page-main--inner">
 
-      <section class="promo">
+      <section class="promo promo--nojs">
         <h1 class="page-main__title page-main__title--form container wrapper">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
 
@@ -187,5 +187,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

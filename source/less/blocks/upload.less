@@ -10,13 +10,17 @@
 }
 
 .upload__container {
-  padding-top: 20px;
-  padding-bottom: 30px;
   background-color: @second-bg-color;
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .upload__form {
   display: grid;
+  padding-top: 20px;
+  padding-bottom: 30px;
 
   @media (max-width: @mobile-width-only) {
     justify-items: center;
@@ -25,6 +29,7 @@
   @media (min-width: @desktop-width) {
     padding-left: 80px;
     padding-right: 60px;
+    background-color: @second-bg-color;
   }
 }
 

@@ -19,6 +19,10 @@
     background-color: @main-color;
   }
 
+  &--menu {
+    background-color: @main-color;
+  }
+
   @media (min-width: @desktop-width) {
     font-weight: 400;
     font-size: 18px;
@@ -27,6 +31,10 @@
 
     &--nojs {
       position: absolute;
+      background-color: @header-bg-color;
+    }
+
+    &--menu {
       background-color: @header-bg-color;
     }
   }
@@ -41,9 +49,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px - (2 * @wrapper-padding-desktop);
-    padding-left: @wrapper-padding;
-    padding-right: @wrapper-padding;
+    max-width: @desktop-width;
+    padding-left: @wrapper-padding-desktop;
+    padding-right: @wrapper-padding-desktop;
     margin: 0 auto;
   }
 }
