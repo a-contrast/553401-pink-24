@@ -67,12 +67,31 @@
 }
 
 .tarifs-table__header {
+  position: relative;
   height: 94px;
   text-transform: uppercase;
+  overflow: hidden;
 
   &:not(:first-child) {
     background-color: @main-color;
     color: @third-color;
+  }
+
+  &--hit {
+    &::before {
+      content: "хит";
+      position: absolute;
+      display: block;
+      width: 100px;
+      background-color: @second-color;
+      color: @third-color;
+      transform: rotate(-45deg);
+      left: -30px;
+      top: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+    }
   }
 
   @media (min-width: @tablet-width) {

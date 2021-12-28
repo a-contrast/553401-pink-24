@@ -166,16 +166,35 @@
 
               <div class="upload__filters image-filters">
                 <div class="image-filters__control">
-                  <button class="image-filters__button image-filters__button--crop image-filters__button--active" type="button"></button>
-                  <input class="image-filters__range" type="range" min="1" max="100" name="crop" value="85">
+                  <button class="image-filters__button image-filters__button--crop image-filters__button--active" type="button">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
+                    </svg>
+                  </button>
+                  <div class="image-filters__range image-filters__range--crop image-filters__range--active">
+                    <button class="image-filters__thumb"></button>
+                  </div>
                 </div>
                 <div class="image-filters__control">
-                  <button class="image-filters__button image-filters__button--fill" type="button"></button>
-                  <input class="image-filters__range" type="range" min="1" max="100" name="fill" value="85">
+                  <button class="image-filters__button image-filters__button--fill" type="button">
+                    <svg width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z" fill="#283645"/>
+                    </svg>
+                  </button>
+                  <div class="image-filters__range image-filters__range--fill">
+                    <button class="image-filters__thumb"></button>
+                  </div>
                 </div>
                 <div class="image-filters__control">
-                  <button class="image-filters__button image-filters__button--contrast" type="button"></button>
-                  <input class="image-filters__range" type="range" min="1" max="100" name="contrast" value="85">
+                  <button class="image-filters__button image-filters__button--contrast" type="button">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z" fill="#283645"/>
+                      <path d="M16 24.29a8.52 8.52 0 0 0 0-17" fill="#283645"/>
+                    </svg>
+                  </button>
+                  <div class="image-filters__range image-filters__range--contrast">
+                    <button class="image-filters__thumb"></button>
+                  </div>
                 </div>
               </div>
 
@@ -198,16 +217,25 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.56.17a3.67 3.67 0 0 1 2.11-.03c.69.2 1.3.59 1.72 1.12.72-.2 1.42-.44 2.14-.65-.01.32-.1.63-.26.91a2.2 2.2 0 0 1-.65.73A1.8 1.8 0 0 0 18 1.8c-.1.41-.3.8-.59 1.13-.29.33-.65.6-1.07.77C16.1 9.97 12.97 14.17 5.65 14h-.5C4.7 14 .73 13.56 0 12.23a7.28 7.28 0 0 0 4.98-1.09c-1.03-.29-2.85-.45-3.16-2.74.4.13.81.16 1.22.08C1.76 7.71.34 7.04.42 5c.4.3.9.47 1.42.44C1.1 5.2-.25 2.31.9.83c1.92 1.72 3.96 3.34 7.59 3.5C8.7 2.22 9.69.79 11.56.18Z" fill="#D22856"/>
+                </svg>
                 <span class="visually-hidden">Наш твиттер</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.5 3.2H9V0H6.02C2.76.17 1.6 2.27 2.08 5.82H0v3.33h2.08V18h3.94V9.15h2.96V5.82H6c-.02-1-.04-2.3.5-2.63Z" fill="#D22856"/>
+                </svg>
                 <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.83 12.8a1.25 1.25 0 0 1-1.28.04 1.1 1.1 0 0 1-.44-.46.97.97 0 0 1-.1-.6V1.22c-.03-.2 0-.41.1-.6C.2.42.35.27.55.16a1.26 1.26 0 0 1 1.28.03l12.4 5.5c1.03.45 1.03 1.17 0 1.62l-12.4 5.5Z" fill="#D22856"/>
+                </svg>
                 <span class="visually-hidden">Мы в Ютубе</span>
               </a>
             </li>
@@ -217,7 +245,9 @@
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML Academy</span>
-            <img src="img/academy.svg" width="27" height="34" alt="Логотип «HTML Academy»">
+            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#D22856"/>
+            </svg>
           </a>
         </div>
       </div>
