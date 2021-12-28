@@ -2,8 +2,32 @@
   text-align: center;
   font-size: 14px;
   line-height: 30px;
+  padding-left: @wrapper-padding;
+  padding-right: @wrapper-padding;
 
-  &--nomobile {
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 18px;
+  }
+}
+
+.form-page__subtitle-nomobile {
+  @media (max-width: @mobile-width-only) {
     display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }

@@ -13,18 +13,15 @@
 
 .container {
   margin: 0 auto;
-  // max-width: 320px;
-
-  @media (min-width: @tablet-width) {
-    // max-width: 660px;
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 1200px;
-  }
+  max-width: @desktop-width;
 }
 
 .wrapper {
   padding-left: @wrapper-padding;
   padding-right: @wrapper-padding;
+
+  @media (min-width: @desktop-width) {
+    padding-left: @wrapper-padding-desktop;
+    padding-right: @wrapper-padding-desktop;
+  }
 }
