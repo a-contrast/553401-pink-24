@@ -5,9 +5,11 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   background-color: @main-bg-color;
-  background-image: url("../img/back-mobile.jpg");
+  // Временно фон от планшета, заменить на мобильную версию
+  background-image: url("../img/back-tablet.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
+  background-size: auto 462px;
 
   &--inner {
     min-height: 237px;
@@ -23,6 +25,7 @@
     min-height: 440px;
     padding-top: 110px;
     background-image: url("../img/back-tablet.jpg");
+    background-size: auto;
   }
 
   @media (min-width: @desktop-width) {
