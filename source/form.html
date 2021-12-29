@@ -13,7 +13,11 @@
     <header class="page-header page-header--nojs">
       <div class="page-header__container page-header__container--inner">
           <a class="page-header__logo" href="index.html">
-            <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
+            </picture>
           </a>
           <nav class="main-nav main-nav--nojs main-nav--closed">
             <button class="main-nav__toggle" type="button">
@@ -164,7 +168,10 @@
     <footer class="page-footer">
       <div class="page-footer__container container wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-footer-mobile.svg" width="145" height="40" alt="Логотип приложения «Pink»">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/logo-footer-desktop.svg">
+            <img src="img/logo-footer-mobile.svg" width="145" height="40" alt="Логотип приложения «Pink»">
+          </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
