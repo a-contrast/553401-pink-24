@@ -9,9 +9,24 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 54px;
   height: 54px;
-  border: 3px solid @border-color-4;
+  border: 3px solid fade(@main-color, 10);
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border-color: @main-color;
+  }
+
+  &:active {
+    border-color: fade(@main-color, 10);
+
+    svg {
+      opacity: 0.3;
+    }
+  }
 }

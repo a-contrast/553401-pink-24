@@ -1,0 +1,15 @@
+.round-toggle {
+  display: block;
+  width: 6px;
+  height: 6px;
+  padding: 3px;
+  border: none;
+  border-radius: 50%;
+  background-color: fade(@main-color, 30);
+  cursor: pointer;
+
+  &--active {
+    outline: 3px solid @main-color;
+    background-color: transparent;
+  }
+}

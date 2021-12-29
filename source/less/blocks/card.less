@@ -7,6 +7,25 @@
 
   &--main {
     margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      height: 36px;
+      top: 0;
+      right: @wrapper-padding;
+      background-color: @second-color;
+      color: @third-color;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
 
     .card__wrapper {
       margin: 0 @wrapper-padding;
@@ -15,6 +34,10 @@
 
   @media (min-width: @tablet-width) {
     &--main {
+      &::before {
+        top: 57px;
+      }
+
       .card__image {
         height: 509px;
       }
@@ -27,6 +50,13 @@
 
   @media (min-width: @desktop-width) {
     &--main {
+      &::before {
+        top: 57px;
+        right: auto;
+        left: 50%;
+        transform: translateX(calc(@max-width-content/2 - 100%));
+      }
+
       .card__image {
         height: 506px;
       }
@@ -57,7 +87,12 @@
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 17px;
+  padding-right: 10px;
   background-color: @second-bg-color;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 17px;
+  }
 }
 
 .card__description {
@@ -83,8 +118,30 @@
 }
 
 .card__like-button {
+  position: relative;
+  padding-left: 30px;
   margin-top: auto;
   text-transform: uppercase;
   color: @second-color;
   font-size: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 12px;
+    left: 0;
+    top: 5px;
+    background-image: url("../img/heart.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+
+    &::before {
+      left: auto;
+      right: 0;
+    }
+  }
 }
