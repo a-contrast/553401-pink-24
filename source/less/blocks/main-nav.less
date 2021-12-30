@@ -37,8 +37,11 @@
       width: 50px;
       height: 4px;
       border-radius: 1px;
-      box-shadow: 0 10px 0 @third-color,
-        0 -10px 0 @third-color;
+      box-shadow:
+        0 10px 0 @third-color,
+        0 -10px 0 @third-color,
+        inset 0 5px 0 0 @third-color;
+      // внутренняя тень сделана для исправления темного режима в google chrome mobile
     }
   }
 

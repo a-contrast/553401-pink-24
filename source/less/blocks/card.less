@@ -1,7 +1,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 14px;
   line-height: 24px;
 
@@ -74,8 +73,16 @@
   width: 100%;
   object-fit: cover;
 
+  @media (max-width: @mobile-width-only) {
+    height: auto;
+  }
+
   @media (min-width: @tablet-width) {
     height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
   }
 }
 

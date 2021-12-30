@@ -13,7 +13,11 @@
     <header class="page-header page-header--nojs">
       <div class="page-header__container page-header__container--inner">
           <a class="page-header__logo" href="index.html">
-            <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
+            </picture>
           </a>
           <nav class="main-nav main-nav--nojs main-nav--closed">
             <button class="main-nav__toggle" type="button">
@@ -49,7 +53,11 @@
         <p class="photogalary__intro-text wrapper container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <article class="photogalary__card card card--main">
           <h2 class="visually-hidden">Главная панорама</h2>
-          <img class="card__image" src="img/panorama-desktop.jpg" width="320" height="137" alt="Фотография дня">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/galary/panorama-desktop.jpg 1x, img/galary/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/galary/panorama-tablet.jpg 1x, img/galary/panorama-tablet@2x.jpg 2x">
+            <img class="card__image" src="img/galary/panorama-mobile.jpg" srcset="img/galary/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фотография дня">
+          </picture>
           <div class="card__wrapper">
             <blockquote class="card__description">
               <div class="card__author-info">
@@ -66,7 +74,11 @@
           <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <img class="card__image" src="img/galary/photo-1-mobile.jpg" width="280" height="180" alt="Фотография">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/galary/photo-1-desktop.jpg 1x, img/galary/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/galary/photo-1-tablet.jpg 1x, img/galary/photo-1-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/galary/photo-1-mobile.jpg" srcset="img/galary/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+              </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -82,7 +94,11 @@
           <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <img class="card__image" src="img/galary/photo-2-mobile.jpg" width="280" height="180" alt="Фотография">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/galary/photo-2-desktop.jpg 1x, img/galary/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/galary/photo-2-tablet.jpg 1x, img/galary/photo-2-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/galary/photo-2-mobile.jpg" srcset="img/galary/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+              </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -94,10 +110,15 @@
                 <a class="card__like-button">Нравится: <span class="card__count">666</span></a>
               </div>
             </article>
-          </li><li class="photogalary__item">
+          </li>
+          <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <img class="card__image" src="img/galary/photo-3-mobile.jpg" width="280" height="180" alt="Фотография">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/galary/photo-3-desktop.jpg 1x, img/galary/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/galary/photo-3-tablet.jpg 1x, img/galary/photo-3-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/galary/photo-3-mobile.jpg" srcset="img/galary/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+              </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -109,10 +130,15 @@
                 <a class="card__like-button">Нравится: <span class="card__count">215</span></a>
               </div>
             </article>
-          </li><li class="photogalary__item">
+          </li>
+          <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <img class="card__image" src="img/galary/photo-4-mobile.jpg" width="280" height="180" alt="Фотография">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/galary/photo-4-desktop.jpg 1x, img/galary/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/galary/photo-4-tablet.jpg 1x, img/galary/photo-4-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/galary/photo-4-mobile.jpg" srcset="img/galary/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+              </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -124,10 +150,15 @@
                 <a class="card__like-button">Нравится: <span class="card__count">4</span></a>
               </div>
             </article>
-          </li><li class="photogalary__item">
+          </li>
+          <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <img class="card__image" src="img/galary/photo-5-mobile.jpg" width="280" height="180" alt="Фотография">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/galary/photo-5-desktop.jpg 1x, img/galary/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/galary/photo-5-tablet.jpg 1x, img/galary/photo-5-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/galary/photo-5-mobile.jpg" srcset="img/galary/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+              </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -139,10 +170,15 @@
                 <a class="card__like-button">Нравится: <span class="card__count">150</span></a>
               </div>
             </article>
-          </li><li class="photogalary__item">
+          </li>
+          <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <img class="card__image" src="img/galary/photo-6-mobile.jpg" width="280" height="180" alt="Фотография">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/galary/photo-6-desktop.jpg 1x, img/galary/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/galary/photo-6-tablet.jpg 1x, img/galary/photo-6-tablet@2x.jpg 2x">
+                <img class="card__image" src="img/galary/photo-6-mobile.jpg" srcset="img/galary/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+              </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -165,7 +201,10 @@
         <div class="upload__container">
           <div class="upload__wrapper container wrapper">
             <form class="upload__form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
-              <img class="upload__image" src="img/galary/photo-7-mobile.jpg" width="280" height="374" alt="Фотография">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/galary/photo-7-tablet.jpg 1x, img/galary/photo-7-tablet@2x.jpg 2x">
+                <img class="upload__image" src="img/galary/photo-7-mobile.jpg" srcset="img/galary/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фотография для редактирования">
+              </picture>
 
               <div class="upload__filters image-filters">
                 <div class="image-filters__control">
@@ -214,7 +253,10 @@
     <footer class="page-footer">
       <div class="page-footer__container container wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-footer-mobile.svg" width="145" height="40" alt="Логотип приложения «Pink»">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/logo-footer-desktop.svg">
+            <img src="img/logo-footer-mobile.svg" width="145" height="40" alt="Логотип приложения «Pink»">
+          </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

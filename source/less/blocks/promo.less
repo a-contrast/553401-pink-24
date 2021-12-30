@@ -5,8 +5,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   background-color: @main-bg-color;
-  // Временно фон от планшета, заменить на мобильную версию
-  background-image: url("../img/back-tablet.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto 462px;
@@ -21,11 +20,19 @@
     background-position: center -66px;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 440px;
     padding-top: 110px;
     background-image: url("../img/back-tablet.jpg");
-    background-size: auto;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -34,6 +41,10 @@
     &--nojs {
       padding-top: 110px;
       background-position: top;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
     }
   }
 }
@@ -51,9 +62,14 @@
     width: 320px;
     height: 286px;
     bottom: 0;
-    background-image: url("../img/promo.png");
+    background-image: url("../img/promo-mobile.png");
     background-repeat: no-repeat;
     background-position: left bottom;
+    background-size: 320px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-mobile@2x.png");
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -67,12 +83,25 @@
       background-image: url("../img/promo-tablet.png");
       background-position: right bottom;
       z-index: 1;
+      background-size: 660px auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-tablet@2x.png");
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
     &::before {
       width: calc(@desktop-width - (2 * @wrapper-padding-desktop));
+      height: 645px;
+      background-image: url("../img/promo-desktop.png");
+      background-size: 1050px auto;
+      background-position: right -130px bottom;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-desktop@2x.png");
+      }
     }
   }
 }

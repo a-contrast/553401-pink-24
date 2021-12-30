@@ -13,7 +13,11 @@
     <header class="page-header page-header--nojs">
       <div class="page-header__container">
           <a class="page-header__logo">
-            <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" width="74" height="23" alt="Логотип приложения «Pink»">
+            </picture>
           </a>
           <nav class="main-nav main-nav--nojs main-nav--closed">
             <button class="main-nav__toggle" type="button">
@@ -88,17 +92,17 @@
               <ul class="characteristic__list characteristic-list">
                 <li class="characteristic-list__item">
                   <h3 class="characteristic-list__title">Поднимает настроение</h3>
-                  <img class="characteristic-list__image" src="img/iphone-1.png" width="308" height="382" alt="Демонстрация приложения">
+                  <img class="characteristic-list__image" src="img/iphone-1.png" srcset="img/iphone-1@2x.png 2x" width="308" height="301" alt="Демонстрация приложения">
                   <p class="characteristic-list__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </li>
                 <li class="characteristic-list__item">
                   <h3 class="characteristic-list__title">Меняет мир вокруг</h3>
-                  <img class="characteristic-list__image" src="img/iphone-2.png" width="308" height="382" alt="Демонстрация приложения">
+                  <img class="characteristic-list__image" src="img/iphone-2.png" srcset="img/iphone-2@2x.png 2x" width="308" height="301" alt="Демонстрация приложения">
                   <p class="characteristic-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </li>
                 <li class="characteristic-list__item">
                   <h3 class="characteristic-list__title">Заводит новых друзей</h3>
-                  <img class="characteristic-list__image" src="img/iphone-3.png" width="308" height="382" alt="Демонстрация приложения">
+                  <img class="characteristic-list__image" src="img/iphone-3.png" srcset="img/iphone-3@2x.png 2x" width="308" height="301" alt="Демонстрация приложения">
                   <p class="characteristic-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
               </ul>
@@ -247,9 +251,6 @@
           </div>
         </div>
         <div class="contacts__map-container">
-          <!-- <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="200" alt="Карта с маркером"> -->
-          <!-- <img class="contacts__map" src="img/map-tablet.jpg" width="660" height="374" alt="Карта с маркером"> -->
-          <!-- <img class="contacts__map" src="img/map.jpg" width="1200" height="502" alt="Карта с маркером"> -->
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715692726!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640611796332!5m2!1sru!2sru" allowfullscreen="" loading="lazy" title="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
         </div>
       </section>
@@ -258,7 +259,10 @@
     <footer class="page-footer">
       <div class="page-footer__container container wrapper">
         <a class="page-footer__logo">
-          <img src="img/logo-footer-mobile.svg" width="145" height="40" alt="Логотип приложения «Pink»">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/logo-footer-desktop.svg">
+            <img src="img/logo-footer-mobile.svg" width="145" height="40" alt="Логотип приложения «Pink»">
+          </picture>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
