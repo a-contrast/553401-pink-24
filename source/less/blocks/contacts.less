@@ -72,6 +72,17 @@
   font-size: 24px;
   line-height: 32.68px;
   text-decoration: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: @main-color;
+    text-decoration: underline;
+  }
+
+  &[href]:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
 
 .contacts__map-container {

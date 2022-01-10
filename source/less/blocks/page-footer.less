@@ -14,16 +14,43 @@
 
 .page-footer__logo {
   margin-bottom: 20px;
+  position: relative;
+  width: 145px;
+  height: 40px;
 
-  @media (min-width: @tablet-width) {
-    width: 150px;
+  &[href]:hover .page-footer__logo-text {
+    fill: @second-color;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
+  &[href]:active .page-footer__logo-text {
+    fill: @main-color;
+  }
+
+  .page-footer__logo-desktop {
+    display: none;
   }
 
   @media (min-width: @desktop-width) {
-    img {
-      width: 147px;
+    width: 147px;
+
+    .page-footer__logo-tablet {
+      display: none;
+    }
+
+    .page-footer__logo-desktop {
+      display: block;
     }
   }
+}
+
+.page-footer__logo-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .page-footer__social {

@@ -78,6 +78,34 @@
   line-height: 18px;
   margin-bottom: 12px;
 
+  &[type="submit"]:hover,
+  &[type="submit"]:focus {
+    color: @third-color;
+    background-color: @second-color;
+  }
+
+  &[type="submit"]:active {
+    background-color: @second-color;
+    color: fade(@third-color, 30);
+  }
+
+  &[type="reset"] {
+    color: @main-color;
+    border-color: @main-color;
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: fade(@third-color, 30);
+      background-color: @main-color;
+      opacity: 0.3;
+    }
+  }
+
   &:last-child {
     margin-bottom: 0;
   }

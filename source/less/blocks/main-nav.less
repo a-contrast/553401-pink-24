@@ -33,14 +33,14 @@
     .main-nav__toggle::before {
       content: "";
       display: block;
-      background-color: @third-color;
+      color: @third-color;
       width: 50px;
       height: 4px;
       border-radius: 1px;
       box-shadow:
-        0 10px 0 @third-color,
-        0 -10px 0 @third-color,
-        inset 0 5px 0 0 @third-color;
+        0 10px 0,
+        0 -10px 0,
+        inset 0 5px 0 0;
       // внутренняя тень сделана для исправления темного режима в google chrome mobile
     }
   }
@@ -88,6 +88,22 @@
   border: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      color: @second-color;
+      background-color: @second-color;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     top: 44px;
   }
@@ -121,11 +137,29 @@
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 16px;
+    color: @third-color;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: @second-color;
+    }
+
+    &[href]:active {
+      color: fade(@second-color, 30);
+    }
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 75px;
     box-shadow: none;
     background-color: transparent;
+
+    a[href]:active {
+      color: fade(@third-color, 30);
+    }
+
+    &--active {
+      box-shadow: 0 2px 0 0 @third-color;
+    }
   }
 }

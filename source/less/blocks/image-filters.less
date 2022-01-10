@@ -31,11 +31,30 @@
   border: none;
   background-color: transparent;
 
+  svg {
+    fill: fade(@main-color, 30);
+  }
+
+  &--active {
+    svg {
+      fill: @second-color;
+    }
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &:not(&--active):hover,
+    &:not(&--active):focus {
+      svg {
+        fill: fade(@main-color, 50);
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 44px;
     height: 44px;
 
-    path {
+    svg {
       fill: @second-color;
     }
 
@@ -112,4 +131,10 @@
   border-radius: 50%;
   border: 2px solid @second-color;
   cursor: pointer;
+
+  &:focus,
+  &:active {
+    background-color: @second-color;
+    outline: none;
+  }
 }

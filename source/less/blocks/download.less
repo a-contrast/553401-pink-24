@@ -18,6 +18,17 @@
   color: @third-color;
   text-decoration: none;
 
+  &:hover,
+  &:focus {
+    outline: none;
+    color: @second-color;
+    background-color: @third-color;
+  }
+
+  &:active {
+    color: fade(@second-color, 30);
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 21px;
   }
