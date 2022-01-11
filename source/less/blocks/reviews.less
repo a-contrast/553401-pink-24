@@ -101,7 +101,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/arrow.svg");
+  opacity: 0.3;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   &--next {
     left: auto;

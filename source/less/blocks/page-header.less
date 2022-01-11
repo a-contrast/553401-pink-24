@@ -58,12 +58,23 @@
 
 .page-header__logo {
   display: block;
-  width: 75px;
-  height: 22px;
+  position: relative;
+  width: 74px;
+  height: 23px;
   margin: 22px @wrapper-padding;
 
-  img {
-    display: block;
+  &[href]:hover svg {
+    fill: @second-color;
+  }
+
+  &[href]:active svg {
+    fill: @third-color;
+    opacity: 0.3;
+  }
+
+  .page-header__logo-tablet,
+  .page-header__logo-desktop {
+    display: none;
   }
 
   @media (min-width: @tablet-width) {
@@ -71,9 +82,8 @@
     width: 145px;
     height: 40px;
 
-    img {
-      width: 145px;
-      height: 40px;
+    .page-header__logo-tablet {
+      display: block;
     }
   }
 
@@ -81,8 +91,18 @@
     margin-left: 0;
     width: 147px;
 
-    img {
-      width: 147px;
+    .page-header__logo-tablet {
+      display: none;
+    }
+
+    .page-header__logo-desktop {
+      display: block;
     }
   }
+}
+
+.page-header__logo-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
