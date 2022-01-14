@@ -1,22 +1,24 @@
 .contacts__container {
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 58px;
+    padding-bottom: 10px;
+  }
 }
 
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-  }
-
-  @media (min-width: @desktop-width) {
-    justify-content: space-between;
   }
 }
 
@@ -24,12 +26,18 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
-    margin-bottom: 50px;
+    width: 48%;
+    margin-bottom: 42px;
+
+    &:last-of-type {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 7px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 30%;
+    width: 32%;
 
     &--mail {
       order: 3;
@@ -46,11 +54,13 @@
   line-height: 32.68px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 33px;
     font-size: 40px;
     line-height: 54.47px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
     font-size: 50px;
     line-height: 68.09px;
   }
@@ -62,11 +72,19 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 24.51px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__link {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   color: @second-color;
   font-weight: 300;
   font-size: 24px;
@@ -103,12 +121,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: -55px;
+    top: -33px;
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
     border-right: 100vw solid transparent;
-    border-top: 123px solid @third-color;
+    border-top: 66px solid @third-color;
   }
 
   iframe {
@@ -121,6 +139,11 @@
     height: 374px;
     background-image: url("../img/map-tablet.jpg");
     background-size: auto 374px;
+
+    &::before {
+      top: -64px;
+      border-top: 132px solid @third-color;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map-tablet@2x.jpg");
@@ -137,7 +160,8 @@
     }
 
     &::before {
-      top: 0;
+      top: -100px;
+      border-top: 203px solid @third-color;
     }
   }
 }

@@ -3,12 +3,22 @@
   justify-content: space-around;
   position: relative;
   width: 280px;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 33px;
+  padding-bottom: 71px;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
+    justify-content: space-between;
     width: auto;
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -17,8 +27,14 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 11px;
+    margin-bottom: 16px;
     padding-right: 18px;
     box-shadow: 0 1px 0 0 fade(@main-color, 10);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 32px;
   }
 }
 
@@ -57,7 +73,9 @@
     svg {
       fill: @second-color;
     }
+  }
 
+  @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     &--crop {
       svg {
         width: 22px;
@@ -86,7 +104,7 @@
   position: absolute;
   width: 240px;
   height: 2px;
-  bottom: 20px;
+  bottom: 34px;
   left: 20px;
   background-color: @main-color;
 
@@ -96,28 +114,33 @@
 
   &--crop {
     .image-filters__thumb {
-      left: 80%;
+      left: 83%;
     }
   }
 
   &--fill {
     .image-filters__thumb {
-      left: 20%;
+      left: 16%;
     }
   }
 
   &--contrast {
     .image-filters__thumb {
-      left: 50%;
+      left: 51%;
     }
   }
 
   @media (min-width: @tablet-width) {
     display: block;
     position: relative;
+    margin-left: 16px;
     width: 100%;
     bottom: auto;
     left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 48px;
   }
 }
 

@@ -1,7 +1,15 @@
 .characteristic {
   position: relative;
-  padding-top: 46px;
-  background: linear-gradient(175deg, transparent 25%, @second-bg-color 25%);
+  padding-top: 20px;
+  background: linear-gradient(174.5deg, transparent 22.5%, @second-bg-color 22.5%);
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(175.5deg, transparent 35%, @second-bg-color 35%);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(175.2deg, transparent 38%, @second-bg-color 38%);
+  }
 }
 
 .characteristic__wrapper {
@@ -15,27 +23,32 @@
     display: block;
     bottom: 0;
     width: 157px;
-    height: 257px;
+    height: 277px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 9px;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 157px auto;
+    background-image: url("../img/iphone-4.png");
 
-    @media (max-width: @mobile-width-only) {
-      background-image: url("../img/iphone-4.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/iphone-4@2x.png");
-      }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-4@2x.png");
     }
+
+    // @media (max-width: @mobile-width-only) {
+    //   background-image: url("../img/iphone-4.png");
+
+    //   @media (min-resolution: 2dppx) {
+    //     background-image: url("../img/iphone-4@2x.png");
+    //   }
+    // }
   }
 
   @media (min-width: @tablet-width) and (max-width: (@desktop-width - 1px)) {
     &::after {
       position: absolute;
-      right: 55%;
+      right: 56.5%;
       width: 268px;
       height: 481px;
       background-size: 268px auto;
@@ -76,8 +89,14 @@
 }
 
 .characteristic__wrapper-inner {
+  margin-bottom: 65px;
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 120px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 38px;
   }
 }
 

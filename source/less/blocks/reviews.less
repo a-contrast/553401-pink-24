@@ -3,10 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 41px;
 
   @media (min-width: @desktop-width) {
-    padding-top: 110px;
+    padding-top: 113px;
 
     &::before {
       content: "";
@@ -33,9 +33,13 @@
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   padding: 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 13px;
+  }
 }
 
 .reviews__text {
@@ -47,7 +51,7 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
     order: 2;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -95,7 +99,7 @@
   width: 22px;
   height: 41px;
   left: 0;
-  top: 50px;
+  top: 28px;
   border: none;
   background-color: transparent;
   background-position: center;

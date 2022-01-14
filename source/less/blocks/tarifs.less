@@ -3,14 +3,25 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding-top: 90px;
-  padding-bottom: 30px;
-  background: linear-gradient(175deg, transparent 20%, @second-bg-color 20%);
+  padding-top: 131px;
+  padding-bottom: 39px;
+  background: linear-gradient(176.5deg, transparent 10%, @second-bg-color 10%);
+
+  @media (min-width: @tablet-width) {
+    padding-top: 105px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 163px;
+    padding-bottom: 65px;
+    background: linear-gradient(175.2deg, transparent 18.5%, @second-bg-color 18.5%);
+  }
 }
 
 .tarifs__table {
   width: calc(100% - (2 * @wrapper-padding));
   max-width: @desktop-width - (2 * @wrapper-padding-desktop);
+  margin-bottom: 32px;
 }
 
 .tarifs__toggles {

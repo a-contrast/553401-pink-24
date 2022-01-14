@@ -2,7 +2,7 @@
   .main-nav__wrapper {
     display: none;
     position: absolute;
-    top: 66px;
+    top: 70px;
     width: 100%;
     z-index: 3;
 
@@ -52,7 +52,7 @@
 
     .main-nav__toggle {
       width: 50px;
-      padding-left: 27px;
+      padding-left: 24px;
     }
 
     .main-nav__toggle::before {
@@ -80,7 +80,7 @@
 .main-nav__toggle {
   position: absolute;
   padding: 0;
-  top: 23px;
+  top: 21px;
   right: @wrapper-padding;
   width: 50px;
   height: 24px;
@@ -105,7 +105,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    top: 44px;
+    top: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -135,7 +135,7 @@
   a {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-bottom: 16px;
     color: @third-color;
 
@@ -150,9 +150,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 75px;
+    margin-left: 80px;
     box-shadow: none;
     background-color: transparent;
+
+    a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 
     a[href]:active {
       color: fade(@third-color, 30);

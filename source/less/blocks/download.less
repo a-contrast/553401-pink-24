@@ -1,14 +1,14 @@
 .download {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 35px;
+  padding-top: 28px;
+  padding-bottom: 30px;
 }
 
 .download__button {
   padding-top: 15px;
   padding-bottom: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
   border: 3px solid @third-color;
   border-radius: 29px;
   text-align: center;
@@ -29,8 +29,13 @@
     color: fade(@second-color, 30);
   }
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 47px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 21px;
+    margin-bottom: 71px;
   }
 }
 
@@ -39,20 +44,40 @@
   align-items: center;
   justify-content: space-around;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0 20px;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.download__item {
+  &--apple {
+    position: relative;
+    bottom: 4px;
+  }
 }
 
 .download__legend {
   padding: 0 20px;
   margin: 0;
-  margin-bottom: 20px;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
 
+  small {
+    font-size: inherit;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    padding: 0;
   }
 }
