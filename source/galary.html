@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -87,7 +90,7 @@
                 <source type="image/webp" srcset="img/galary/photo-1-mobile.webp 1x, img/galary/photo-1-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/galary/photo-1-desktop.jpg 1x, img/galary/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/galary/photo-1-tablet.jpg 1x, img/galary/photo-1-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-1-mobile.jpg" srcset="img/galary/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                <img class="card__image" src="img/galary/photo-1-mobile.jpg" loading="lazy" srcset="img/galary/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
               </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
@@ -110,7 +113,7 @@
                 <source type="image/webp" srcset="img/galary/photo-2-mobile.webp 1x, img/galary/photo-2-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/galary/photo-2-desktop.jpg 1x, img/galary/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/galary/photo-2-tablet.jpg 1x, img/galary/photo-2-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-2-mobile.jpg" srcset="img/galary/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                <img class="card__image" src="img/galary/photo-2-mobile.jpg" loading="lazy" srcset="img/galary/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
               </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
@@ -133,7 +136,7 @@
                 <source type="image/webp" srcset="img/galary/photo-3-mobile.webp 1x, img/galary/photo-3-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/galary/photo-3-desktop.jpg 1x, img/galary/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/galary/photo-3-tablet.jpg 1x, img/galary/photo-3-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-3-mobile.jpg" srcset="img/galary/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                <img class="card__image" src="img/galary/photo-3-mobile.jpg" loading="lazy" srcset="img/galary/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
               </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
@@ -156,7 +159,7 @@
                 <source type="image/webp" srcset="img/galary/photo-4-mobile.webp 1x, img/galary/photo-4-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/galary/photo-4-desktop.jpg 1x, img/galary/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/galary/photo-4-tablet.jpg 1x, img/galary/photo-4-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-4-mobile.jpg" srcset="img/galary/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                <img class="card__image" src="img/galary/photo-4-mobile.jpg" loading="lazy" srcset="img/galary/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
               </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
@@ -179,7 +182,7 @@
                 <source type="image/webp" srcset="img/galary/photo-5-mobile.webp 1x, img/galary/photo-5-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/galary/photo-5-desktop.jpg 1x, img/galary/photo-5-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/galary/photo-5-tablet.jpg 1x, img/galary/photo-5-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-5-mobile.jpg" srcset="img/galary/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                <img class="card__image" src="img/galary/photo-5-mobile.jpg" loading="lazy" srcset="img/galary/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
               </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
@@ -202,7 +205,7 @@
                 <source type="image/webp" srcset="img/galary/photo-6-mobile.webp 1x, img/galary/photo-6-mobile@2x.webp 2x">
                 <source media="(min-width: 980px)" srcset="img/galary/photo-6-desktop.jpg 1x, img/galary/photo-6-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/galary/photo-6-tablet.jpg 1x, img/galary/photo-6-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-6-mobile.jpg" srcset="img/galary/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                <img class="card__image" src="img/galary/photo-6-mobile.jpg" loading="lazy" srcset="img/galary/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
               </picture>
               <div class="card__wrapper">
                 <blockquote class="card__description">
@@ -229,38 +232,47 @@
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-7-tablet.webp 1x, img/galary/photo-7-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/galary/photo-7-mobile.webp 1x, img/galary/photo-7-mobile@2x.webp 2x">
                 <source media="(min-width: 660px)" srcset="img/galary/photo-7-tablet.jpg 1x, img/galary/photo-7-tablet@2x.jpg 2x">
-                <img class="upload__image" src="img/galary/photo-7-mobile.jpg" srcset="img/galary/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фотография для редактирования">
+                <img class="upload__image" src="img/galary/photo-7-mobile.jpg" loading="lazy" srcset="img/galary/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фотография для редактирования">
               </picture>
 
               <div class="upload__filters image-filters">
                 <div class="image-filters__control">
                   <button class="image-filters__button image-filters__button--crop image-filters__button--active" type="button">
+                    <span class="visually-hidden">Управление размером изображения</span>
                     <svg width="44" height="44" fill="#283645">
                       <use xlink:href="img/sprite.svg#crop"></use>
                     </svg>
                   </button>
                   <div class="image-filters__range image-filters__range--crop image-filters__range--active">
-                    <button class="image-filters__thumb"></button>
+                    <button class="image-filters__thumb">
+                      <span class="visually-hidden">Управление ползунком</span>
+                    </button>
                   </div>
                 </div>
                 <div class="image-filters__control">
                   <button class="image-filters__button image-filters__button--fill" type="button">
+                    <span class="visually-hidden">Управление цветом изображения</span>
                     <svg width="48" height="43" fill="#283645">
                       <use xlink:href="img/sprite.svg#fill"></use>
                     </svg>
                   </button>
                   <div class="image-filters__range image-filters__range--fill">
-                    <button class="image-filters__thumb"></button>
+                    <button class="image-filters__thumb">
+                      <span class="visually-hidden">Управление ползунком</span>
+                    </button>
                   </div>
                 </div>
                 <div class="image-filters__control">
                   <button class="image-filters__button image-filters__button--contrast" type="button">
+                    <span class="visually-hidden">Управление контрастностью изображения</span>
                     <svg width="32" height="32" fill="#283645">
                       <use xlink:href="img/sprite.svg#contrast"></use>
                     </svg>
                   </button>
                   <div class="image-filters__range image-filters__range--contrast">
-                    <button class="image-filters__thumb"></button>
+                    <button class="image-filters__thumb">
+                      <span class="visually-hidden">Управление ползунком</span>
+                    </button>
                   </div>
                 </div>
               </div>
