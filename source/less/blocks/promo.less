@@ -1,6 +1,5 @@
 .promo {
   padding-top: 66px;
-  margin-bottom: 21px;
   text-align: center;
   color: @third-color;
   font-family: "Open Sans", sans-serif;
@@ -26,11 +25,10 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 27px;
     min-height: 440px;
     padding-top: 110px;
     background-image: url("../img/back-tablet.jpg");
-    background-size: auto;
+    background-size: auto 729px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -39,8 +37,8 @@
 
   @media (min-width: @desktop-width) {
     min-height: 394px;
-    margin-bottom: 42px;
     background-image: url("../img/back-desktop.jpg");
+    background-size: auto 853px;
 
     &--nojs {
       padding-top: 110px;

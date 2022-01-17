@@ -1,0 +1,116 @@
+.modal {
+  position: fixed;
+  display: flex;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  &--success {
+    .modal__container {
+      background: linear-gradient(to top, @second-bg-color 163px, @third-color 163px);
+    }
+
+    .modal__wrapper {
+      @media (min-width: @desktop-width) {
+        width: 456px;
+      }
+    }
+
+    .modal__button {
+      margin-top: 50px;
+
+      @media (min-width: @desktop-width) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.modal__container {
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 7px 15px @modal-shadow;
+  background-color: @third-color;
+
+  @media (max-width: @mobile-width-only) {
+    max-width: 460px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    background: linear-gradient(to top, @second-bg-color 163px, @third-color 163px);
+  }
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 41px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 360px;
+  }
+}
+
+.modal__header {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__text {
+  margin: 0;
+  padding-bottom: 35px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 110px;
+  }
+}
+
+.modal__button {
+  align-self: stretch;
+  margin-bottom: 50px;
+  margin-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 17px 55px;
+    margin: 50px 30px;
+  }
+}
