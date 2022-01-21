@@ -15,7 +15,7 @@
   <body class="page__body">
     <header class="page-header page-header--nojs">
       <div class="page-header__container page-header__container--inner">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" aria-label="Ссылка-логотип ведет на главную страницу">
             <svg class="page-header__logo-text" width="74" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#logo-text"></use>
             </svg>
@@ -60,14 +60,16 @@
         <p class="photogalary__subtitle page-main__subtitle wrapper container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <article class="photogalary__card card card--main">
           <h2 class="visually-hidden">Главная панорама</h2>
-          <picture>
-            <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/panorama-desktop.webp 1x, img/galary/panorama-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/panorama-tablet.webp 1x, img/galary/panorama-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/galary/panorama-mobile.webp 1x, img/galary/panorama-mobile@2x.webp 2x">
-            <source media="(min-width: 980px)" srcset="img/galary/panorama-desktop.jpg 1x, img/galary/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/galary/panorama-tablet.jpg 1x, img/galary/panorama-tablet@2x.jpg 2x">
-            <img class="card__image" src="img/galary/panorama-mobile.jpg" srcset="img/galary/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фотография дня">
-          </picture>
+          <a href="">
+            <picture>
+              <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/panorama-desktop.webp 1x, img/galary/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/panorama-tablet.webp 1x, img/galary/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/galary/panorama-mobile.webp 1x, img/galary/panorama-mobile@2x.webp 2x">
+              <source media="(min-width: 980px)" srcset="img/galary/panorama-desktop.jpg 1x, img/galary/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/galary/panorama-tablet.jpg 1x, img/galary/panorama-tablet@2x.jpg 2x">
+              <img class="card__image" src="img/galary/panorama-mobile.jpg" srcset="img/galary/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фотография дня">
+            </picture>
+          </a>
           <div class="card__wrapper">
             <blockquote class="card__description">
               <div class="card__author-info">
@@ -84,14 +86,16 @@
           <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <picture>
-                <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-1-desktop.webp 1x, img/galary/photo-1-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-1-tablet.webp 1x, img/galary/photo-1-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/galary/photo-1-mobile.webp 1x, img/galary/photo-1-mobile@2x.webp 2x">
-                <source media="(min-width: 980px)" srcset="img/galary/photo-1-desktop.jpg 1x, img/galary/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/galary/photo-1-tablet.jpg 1x, img/galary/photo-1-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-1-mobile.jpg" loading="lazy" srcset="img/galary/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
-              </picture>
+              <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-1-desktop.webp 1x, img/galary/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-1-tablet.webp 1x, img/galary/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galary/photo-1-mobile.webp 1x, img/galary/photo-1-mobile@2x.webp 2x">
+                  <source media="(min-width: 980px)" srcset="img/galary/photo-1-desktop.jpg 1x, img/galary/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/galary/photo-1-tablet.jpg 1x, img/galary/photo-1-tablet@2x.jpg 2x">
+                  <img class="card__image" src="img/galary/photo-1-mobile.jpg" loading="lazy" srcset="img/galary/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                </picture>
+              </a>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -107,14 +111,16 @@
           <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <picture>
-                <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-2-desktop.webp 1x, img/galary/photo-2-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-2-tablet.webp 1x, img/galary/photo-2-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/galary/photo-2-mobile.webp 1x, img/galary/photo-2-mobile@2x.webp 2x">
-                <source media="(min-width: 980px)" srcset="img/galary/photo-2-desktop.jpg 1x, img/galary/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/galary/photo-2-tablet.jpg 1x, img/galary/photo-2-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-2-mobile.jpg" loading="lazy" srcset="img/galary/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
-              </picture>
+              <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-2-desktop.webp 1x, img/galary/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-2-tablet.webp 1x, img/galary/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galary/photo-2-mobile.webp 1x, img/galary/photo-2-mobile@2x.webp 2x">
+                  <source media="(min-width: 980px)" srcset="img/galary/photo-2-desktop.jpg 1x, img/galary/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/galary/photo-2-tablet.jpg 1x, img/galary/photo-2-tablet@2x.jpg 2x">
+                  <img class="card__image" src="img/galary/photo-2-mobile.jpg" loading="lazy" srcset="img/galary/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                </picture>
+              </a>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -130,14 +136,16 @@
           <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <picture>
-                <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-3-desktop.webp 1x, img/galary/photo-3-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-3-tablet.webp 1x, img/galary/photo-3-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/galary/photo-3-mobile.webp 1x, img/galary/photo-3-mobile@2x.webp 2x">
-                <source media="(min-width: 980px)" srcset="img/galary/photo-3-desktop.jpg 1x, img/galary/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/galary/photo-3-tablet.jpg 1x, img/galary/photo-3-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-3-mobile.jpg" loading="lazy" srcset="img/galary/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
-              </picture>
+              <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-3-desktop.webp 1x, img/galary/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-3-tablet.webp 1x, img/galary/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galary/photo-3-mobile.webp 1x, img/galary/photo-3-mobile@2x.webp 2x">
+                  <source media="(min-width: 980px)" srcset="img/galary/photo-3-desktop.jpg 1x, img/galary/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/galary/photo-3-tablet.jpg 1x, img/galary/photo-3-tablet@2x.jpg 2x">
+                  <img class="card__image" src="img/galary/photo-3-mobile.jpg" loading="lazy" srcset="img/galary/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                </picture>
+              </a>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -153,14 +161,16 @@
           <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <picture>
-                <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-4-desktop.webp 1x, img/galary/photo-4-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-4-tablet.webp 1x, img/galary/photo-4-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/galary/photo-4-mobile.webp 1x, img/galary/photo-4-mobile@2x.webp 2x">
-                <source media="(min-width: 980px)" srcset="img/galary/photo-4-desktop.jpg 1x, img/galary/photo-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/galary/photo-4-tablet.jpg 1x, img/galary/photo-4-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-4-mobile.jpg" loading="lazy" srcset="img/galary/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
-              </picture>
+              <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-4-desktop.webp 1x, img/galary/photo-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-4-tablet.webp 1x, img/galary/photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galary/photo-4-mobile.webp 1x, img/galary/photo-4-mobile@2x.webp 2x">
+                  <source media="(min-width: 980px)" srcset="img/galary/photo-4-desktop.jpg 1x, img/galary/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/galary/photo-4-tablet.jpg 1x, img/galary/photo-4-tablet@2x.jpg 2x">
+                  <img class="card__image" src="img/galary/photo-4-mobile.jpg" loading="lazy" srcset="img/galary/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                </picture>
+              </a>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -176,14 +186,16 @@
           <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <picture>
-                <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-5-desktop.webp 1x, img/galary/photo-5-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-5-tablet.webp 1x, img/galary/photo-5-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/galary/photo-5-mobile.webp 1x, img/galary/photo-5-mobile@2x.webp 2x">
-                <source media="(min-width: 980px)" srcset="img/galary/photo-5-desktop.jpg 1x, img/galary/photo-5-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/galary/photo-5-tablet.jpg 1x, img/galary/photo-5-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-5-mobile.jpg" loading="lazy" srcset="img/galary/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
-              </picture>
+              <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-5-desktop.webp 1x, img/galary/photo-5-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-5-tablet.webp 1x, img/galary/photo-5-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galary/photo-5-mobile.webp 1x, img/galary/photo-5-mobile@2x.webp 2x">
+                  <source media="(min-width: 980px)" srcset="img/galary/photo-5-desktop.jpg 1x, img/galary/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/galary/photo-5-tablet.jpg 1x, img/galary/photo-5-tablet@2x.jpg 2x">
+                  <img class="card__image" src="img/galary/photo-5-mobile.jpg" loading="lazy" srcset="img/galary/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                </picture>
+              </a>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -199,14 +211,16 @@
           <li class="photogalary__item">
             <article class="photogalary__card card">
               <h2 class="visually-hidden">Карточка с фотографией автора</h2>
-              <picture>
-                <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-6-desktop.webp 1x, img/galary/photo-6-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-6-tablet.webp 1x, img/galary/photo-6-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/galary/photo-6-mobile.webp 1x, img/galary/photo-6-mobile@2x.webp 2x">
-                <source media="(min-width: 980px)" srcset="img/galary/photo-6-desktop.jpg 1x, img/galary/photo-6-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/galary/photo-6-tablet.jpg 1x, img/galary/photo-6-tablet@2x.jpg 2x">
-                <img class="card__image" src="img/galary/photo-6-mobile.jpg" loading="lazy" srcset="img/galary/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
-              </picture>
+              <a href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 980px)" srcset="img/galary/photo-6-desktop.webp 1x, img/galary/photo-6-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-6-tablet.webp 1x, img/galary/photo-6-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galary/photo-6-mobile.webp 1x, img/galary/photo-6-mobile@2x.webp 2x">
+                  <source media="(min-width: 980px)" srcset="img/galary/photo-6-desktop.jpg 1x, img/galary/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/galary/photo-6-tablet.jpg 1x, img/galary/photo-6-tablet@2x.jpg 2x">
+                  <img class="card__image" src="img/galary/photo-6-mobile.jpg" loading="lazy" srcset="img/galary/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография">
+                </picture>
+              </a>
               <div class="card__wrapper">
                 <blockquote class="card__description">
                   <div class="card__author-info">
@@ -228,12 +242,14 @@
         <div class="upload__container">
           <div class="upload__wrapper container wrapper">
             <form class="upload__form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
-              <picture>
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-7-tablet.webp 1x, img/galary/photo-7-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/galary/photo-7-mobile.webp 1x, img/galary/photo-7-mobile@2x.webp 2x">
-                <source media="(min-width: 660px)" srcset="img/galary/photo-7-tablet.jpg 1x, img/galary/photo-7-tablet@2x.jpg 2x">
-                <img class="upload__image" src="img/galary/photo-7-mobile.jpg" loading="lazy" srcset="img/galary/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фотография для редактирования">
-              </picture>
+              <a class="upload__link-image" href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/galary/photo-7-tablet.webp 1x, img/galary/photo-7-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galary/photo-7-mobile.webp 1x, img/galary/photo-7-mobile@2x.webp 2x">
+                  <source media="(min-width: 660px)" srcset="img/galary/photo-7-tablet.jpg 1x, img/galary/photo-7-tablet@2x.jpg 2x">
+                  <img class="upload__image" src="img/galary/photo-7-mobile.jpg" loading="lazy" srcset="img/galary/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Фотография для редактирования">
+                </picture>
+              </a>
 
               <div class="upload__filters image-filters">
                 <div class="image-filters__control">
@@ -243,11 +259,8 @@
                       <use xlink:href="img/sprite.svg#crop"></use>
                     </svg>
                   </button>
-                  <div class="image-filters__range image-filters__range--crop image-filters__range--active">
-                    <button class="image-filters__thumb">
-                      <span class="visually-hidden">Управление ползунком</span>
-                    </button>
-                  </div>
+                  <label class="visually-hidden" for="crop">Значение размера изображения</label>
+                  <input class="image-filters__range image-filters__range--active" type="range" name="crop" id="crop" step="1" min="0" max="100" value="85">
                 </div>
                 <div class="image-filters__control">
                   <button class="image-filters__button image-filters__button--fill" type="button">
@@ -256,11 +269,8 @@
                       <use xlink:href="img/sprite.svg#fill"></use>
                     </svg>
                   </button>
-                  <div class="image-filters__range image-filters__range--fill">
-                    <button class="image-filters__thumb">
-                      <span class="visually-hidden">Управление ползунком</span>
-                    </button>
-                  </div>
+                  <label class="visually-hidden" for="fill">Значение цветности изображения</label>
+                  <input class="image-filters__range" type="range" name="fill" id="fill" step="1" min="0" max="100" value="13">
                 </div>
                 <div class="image-filters__control">
                   <button class="image-filters__button image-filters__button--contrast" type="button">
@@ -269,11 +279,8 @@
                       <use xlink:href="img/sprite.svg#contrast"></use>
                     </svg>
                   </button>
-                  <div class="image-filters__range image-filters__range--contrast">
-                    <button class="image-filters__thumb">
-                      <span class="visually-hidden">Управление ползунком</span>
-                    </button>
-                  </div>
+                  <label class="visually-hidden" for="contrast">Значение контрастности</label>
+                  <input class="image-filters__range" type="range" name="contrast" id="contrast" step="1" min="0" max="100" value="51">
                 </div>
               </div>
 
@@ -289,7 +296,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__container container wrapper">
-        <a class="page-footer__logo" href="index.html">
+        <a class="page-footer__logo" href="index.html" aria-label="Ссылка-логотип ведет на главную страницу">
           <svg class="page-footer__logo-tablet" width="145" height="40" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#logo-tablet"></use>
           </svg>
@@ -331,7 +338,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
+            <span class="visually-hidden">Ссылка на курсы HTML Academy</span>
             <svg width="27" height="34" fill="#D22856">
               <use xlink:href="img/sprite.svg#academy"></use>
             </svg>
