@@ -28,7 +28,7 @@
     min-height: 440px;
     padding-top: 110px;
     background-image: url("../img/back-tablet.jpg");
-    background-size: cover;
+    background-size: auto 729px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -36,7 +36,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 394px;
     background-image: url("../img/back-desktop.jpg");
+    background-size: auto 853px;
 
     &--nojs {
       padding-top: 110px;
@@ -74,12 +76,13 @@
 
   @media (min-width: @tablet-width) {
     width: 48.49%;
+    padding-bottom: 82px;
 
     &::before {
       position: absolute;
       width: calc(100vw - (2 * @wrapper-padding));
       height: 545px;
-      left: 0;
+      left: @wrapper-padding;
       background-image: url("../img/promo-tablet.png");
       background-position: right bottom;
       z-index: 1;
@@ -92,9 +95,13 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 31.8%;
+    padding-bottom: 92px;
+
     &::before {
       width: calc(@desktop-width - (2 * @wrapper-padding-desktop));
       height: 645px;
+      left: -4px;
       background-image: url("../img/promo-desktop.png");
       background-size: 1050px auto;
       background-position: right -130px bottom;
@@ -108,8 +115,8 @@
 
 .promo__slogan {
   margin: 0;
-  margin-top: 22px;
-  margin-bottom: 30px;
+  margin-top: 24px;
+  margin-bottom: 29px;
   padding: 0;
   width: 240px;
   text-align: center;
@@ -119,12 +126,15 @@
   z-index: 2;
 
   @media (min-width: @tablet-width) {
-    margin-top: 102px;
+    margin-top: 95px;
+    margin-bottom: 2px;
     font-size: 40px;
     line-height: 48px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 98px;
+    margin-bottom: 10px;
     font-size: 50px;
     line-height: 68.09px;
   }

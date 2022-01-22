@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -12,7 +15,7 @@
   <body class="page__body">
     <header class="page-header page-header--nojs">
       <div class="page-header__container page-header__container--inner">
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" aria-label="Ссылка-логотип ведет на главную страницу">
             <svg class="page-header__logo-text" width="74" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#logo-text"></use>
             </svg>
@@ -39,7 +42,7 @@
                   <a>Конкурс</a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="">Html Academy</a>
+                  <a href="">HTML Academy</a>
                 </li>
               </ul>
             </div>
@@ -49,13 +52,13 @@
 
     <main class="page-main form-page page-main--inner">
 
-      <section class="promo promo--nojs">
+      <section class="promo promo--inner promo--nojs">
         <h1 class="page-main__title page-main__title--form container wrapper">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
 
       <section class="form-page__competition container">
         <h2 class="visually-hidden">Форма для конкурса</h2>
-        <p class="form-page__subtitle">
+        <p class="form-page__subtitle page-main__subtitle">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="form-page__subtitle-nomobile">Пожалуйста, заполните форму ниже:</span>
         </p>
@@ -64,22 +67,27 @@
           <fieldset class="form__fieldset form__fieldset--name">
             <legend class="visually-hidden">Введите ФИО</legend>
             <div class="form__wrapper wrapper">
-              <label class="form__label form__label--input">Фамилия:
+              <label class="form__label form__label--input">
+                <span>Фамилия:</span>
                 <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
               </label>
 
-              <label class="form__label form__label--input">Имя:
+              <label class="form__label form__label--input">
+                <span>Имя:</span>
                 <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
               </label>
 
-              <label class="form__label form__label--input">Отчество:
+              <label class="form__label form__label--input">
+                <span>Отчество:</span>
                 <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </div>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--container form__fieldset--os">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <legend class="form__legend">
+              <span>С каким приложением путешествовали?</span>
+            </legend>
             <div class="form__container form__app wrapper">
               <label class="form__label form__label--radio">
                 <input class="visually-hidden" type="radio" name="app-data" value="iOS" checked>
@@ -161,7 +169,7 @@
           </fieldset>
 
           <div class="form__submit wrapper">
-            <button class="form__button" type="submit">Отправить форму</button>
+            <button class="form__button submit-button" type="submit">Отправить форму</button>
             <span class="form__explanation">
               <span class="form__color-span">*</span> &mdash; Обязательные <span class="form__nomobile">для заполнения</span> поля</span>
           </div>
@@ -171,7 +179,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__container container wrapper">
-        <a class="page-footer__logo" href="index.html">
+        <a class="page-footer__logo" href="index.html" aria-label="Ссылка-логотип ведет на главную страницу">
           <svg class="page-footer__logo-tablet" width="145" height="40" fill="#D22856" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#logo-tablet"></use>
           </svg>
@@ -213,7 +221,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
+            <span class="visually-hidden">Ссылка на курсы HTML Academy</span>
             <svg width="27" height="34" fill="#D22856">
               <use xlink:href="img/sprite.svg#academy"></use>
             </svg>
@@ -221,6 +229,28 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal--failure" style="display: none;">
+      <div class="modal__container">
+        <div class="modal__wrapper">
+          <h3 class="modal__header">Что-то пошло не&nbsp;так!</h3>
+          <p class="modal__text">Проверьте поля, выделенные красным,
+            скорее всего вы забыли их заполнить</p>
+          <button class="modal__button submit-button">OK</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal modal--success" style="display: none;">
+      <div class="modal__container">
+        <div class="modal__wrapper">
+          <h3 class="modal__header">Ваша заявка отправлена</h3>
+          <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+            В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
+          <button class="modal__button submit-button">Закрыть окно</button>
+        </div>
+      </div>
+    </section>
 
     <script src="js/script.js"></script>
   </body>

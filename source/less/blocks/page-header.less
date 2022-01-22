@@ -23,6 +23,15 @@
     background-color: @main-color;
   }
 
+  @media (max-width: @mobile-width-only) {
+    &--nojs,
+    &--menu {
+      .page-header__logo {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
   @media (min-width: @desktop-width) {
     font-weight: 400;
     font-size: 18px;
@@ -78,7 +87,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 35px @wrapper-padding;
+    margin: 27px @wrapper-padding;
+    margin-bottom: 43px;
     width: 145px;
     height: 40px;
 

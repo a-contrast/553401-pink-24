@@ -1,3 +1,22 @@
+.page-main--inner {
+  .page-main__subtitle {
+    padding-top: 44px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 92px;
+      font-size: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 18px;
+    }
+  }
+}
+
 .page-main__title {
   display: inline-block;
   width: 230px;
@@ -12,6 +31,7 @@
 
   @media (min-width: @tablet-width) {
     width: 400px;
+    margin-top: 66px;
     font-size: 50px;
     line-height: 68.09px;
 
@@ -21,6 +41,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 59px;
+
     &--form {
       width: 940px;
     }
